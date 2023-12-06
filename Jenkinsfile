@@ -19,7 +19,7 @@ pipeline {
                 script {
                     def remoteServer = '34.205.65.197' // Replace with your server's IP address
                     def remoteUser = 'ubuntu' // Replace with your SSH username
-                    def remoteKeyPath = '/home/ubuntu/ansible.pem' // Replace with the path to your private SSH key file
+                    def remoteKeyPath = '/home/ansible.pem' // Replace with the path to your private SSH key file
 
                     // Define the local and remote paths
                     def localFilePath = 'index.html' // The file you want to copy
