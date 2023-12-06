@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                    checkout([$class: 'GitSCM', branches: [[name: params.BRANCH_TO_BUILD]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/AhmedS0liman/jenkins_task2']]])
+                    checkout([$class: 'GitSCM', branches: [[name: params.BRANCH_TO_BUILD]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/AhmedS0liman/task3']]])
                 }
             }
         }
