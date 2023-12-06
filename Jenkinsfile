@@ -23,7 +23,7 @@ pipeline {
 
                     // Define the local and remote paths
                     def localFilePath = 'index.html' // The file you want to copy
-                    def remoteApachePath = '/var/www/html/index.html' // Replace with your Apache web server path
+                    def remoteApachePath = '/var/www/html' // Replace with your Apache web server path
 
                     // Use SSH with private key to copy the file to the remote server
                     sshScript = """
